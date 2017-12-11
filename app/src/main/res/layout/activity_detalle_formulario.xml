@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context="com.villegas.formulario.DetalleFormulario">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detalle_confirmar"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="@dimen/nombreContacto"/>
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jose Manuel López"
+        android:layout_marginTop="@dimen/top"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="@dimen/telefonoContacto"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top">
+
+
+        <TextView
+            android:id="@+id/tvDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detalle_dateFecha"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/telefonoContacto"
+            android:layout_marginRight="@dimen/right"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/telefonoContacto"
+            android:text="12/12/1984"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top">
+
+
+        <TextView
+            android:id="@+id/tvTelefonoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detalle_telephone"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/telefonoContacto"
+            android:layout_marginRight="@dimen/right"/>
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/telefonoContacto"
+            android:text="666444852"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top">
+
+        <TextView
+            android:id="@+id/tvEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_email"
+            android:textSize="@dimen/telefonoContacto" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jmvillegas@hotmail.com"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/telefonoContacto"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top">
+
+        <TextView
+            android:id="@+id/tvDescabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_description"
+            android:textSize="@dimen/telefonoContacto" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Es el primer contacto que tengo"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/telefonoContacto"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/left"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/detalle_editar" />
+
+
+
+</LinearLayout>
